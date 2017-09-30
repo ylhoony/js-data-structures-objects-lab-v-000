@@ -4,6 +4,7 @@ const driver = {};
 
 function updatedriverWithKeyAndValue(driver, key, value) {
   driver[key] = value;
+  return driver;
 }
 
 
