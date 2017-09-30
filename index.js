@@ -19,21 +19,12 @@ function deleteFromDriverByKey(driver, key) {
   return newDriver;
 }
 
+function destructivelyDeleteFromDriverByKey(driver, key) {
+  delete driver[key];
+  return driver;
+}
 
-//
-// describe('deleteFromDriverByKey(driver, key)', function () {
-//   it('deletes `key` from a clone of driver and returns the new driver (it is non-destructive)', function () {
-//     let newdriver = deleteFromDriverByKey(driver, 'name');
-//
-//     expect(newdriver['name']).to.equal(undefined);
-//   });
-//
-//   it('does not modify the original driver (it is non-destructive)', function () {
-//     deleteFromDriverByKey(driver, 'name');
-//
-//     expect(driver['name']).to.equal('Sam');
-//   });
-// });
+
 //
 // describe('destructivelyDeleteFromdriverByKey(driver, key)', function () {
 //   it('returns driver without the delete key/value pair', function () {
