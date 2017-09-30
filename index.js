@@ -4,14 +4,10 @@ const driver = {};
 
 function updatedriverWithKeyAndValue(driver, key, value) {
   driver[key] = value;
-  return driver;
 }
 
 
 
-// it('defines a `driver` driver', function () {
-//   expect(typeof driver).to.equal('object');
-// });
 //
 // describe('updatedriverWithKeyAndValue(driver, key, value)', function () {
 //   beforeEach(function () {
