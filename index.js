@@ -2,7 +2,7 @@
 
 const driver = {};
 
-function updatedriverWithKeyAndValue(driver, key, value) {
+function updateDriverWithKeyAndValue(driver, key, value) {
   driver[key] = value;
   return driver;
 }
