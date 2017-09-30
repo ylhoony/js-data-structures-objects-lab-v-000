@@ -8,15 +8,11 @@ function updateDriverWithKeyAndValue(driver, key, value) {
   return newDriver;
 }
 
+function destructivelyUpdatedriverWithKeyAndValue(driver, key, value) {
+  
+}
 
 
-//
-//   it('it does not modify the original driver, but rather returns a clone with the new data', function () {
-//     updateDriverWithKeyAndValue(driver, 'address', '11 Broadway');
-//
-//     expect(driver['address']).to.equal(undefined);
-//   });
-// });
 //
 // describe('destructivelyUpdatedriverWithKeyAndValue(driver, key, value)', function () {
 //   it('updates `driver` with the given `key` and `value` (it is destructive) and returns the entire updated driver', function () {
