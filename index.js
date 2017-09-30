@@ -3,28 +3,13 @@
 const driver = {};
 
 function updateDriverWithKeyAndValue(driver, key, value) {
-  driver[key] = value;
-  return driver;
+  const newDriver = Object.assign(driver,{[key]: value};
+  return newDriver;
 }
 
 
 
-//
-// describe('updatedriverWithKeyAndValue(driver, key, value)', function () {
-//   beforeEach(function () {
-//     for (const key in driver) {
-//       delete driver[key];
-//     }
-//
-//     driver.name = 'Sam';
-//   });
-//
-//   it('returns an driver with the orignal key value pairs and the new key value pair', function () {
-//     expect(updateDriverWithKeyAndValue(driver, 'address', '11 Broadway')).to.eql({
-//       name: 'Sam',
-//       address: '11 Broadway'
-//     });
-//   });
+
 //
 //   it('it does not modify the original driver, but rather returns a clone with the new data', function () {
 //     updateDriverWithKeyAndValue(driver, 'address', '11 Broadway');
